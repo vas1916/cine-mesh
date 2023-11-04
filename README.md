@@ -18,6 +18,8 @@
   - Implemented Sign Out
   - Updated Profile
   - Fetch Movies from TMDB Movies
+  - Register to TMDB API & create API KEY
+  - Make API call and get the data
 
 # Features
 

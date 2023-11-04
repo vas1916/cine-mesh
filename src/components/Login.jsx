@@ -81,8 +81,8 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className="absolute">
-        <img src={BG_URL} alt="cinemesh-background" />
+      <div className=" absolute">
+        <img className="w-screen" src={BG_URL} alt="cinemesh-background" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
