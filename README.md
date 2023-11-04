@@ -7,6 +7,17 @@
 - Sign In / Sign Up Form
   - Form Validation
   - useRef Hook
+  - Firebase setup
+    - npm install firebase
+    - npm install -g firebase-tools
+    - firebase login, firebase init, firebase deploy
+  - Deploy app to production
+  - Create User Sign Up Flow
+  - Implement Sign In user API
+  - Created Redux Store with userSlice
+  - Implemented Sign Out
+  - Updated Profile
+  - Fetch Movies from TMDB Movies
 
 # Features
 
