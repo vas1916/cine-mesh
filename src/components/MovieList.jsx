@@ -7,7 +7,7 @@ const MovieList = ({ title, movies }) => {
         {title}
       </h1>
       <div className="flex overflow-auto ">
-        <div className="flex scroll-m-8 hover:scroll-m-0 ">
+        <div className="flex scroll-m-8 hover:scroll-m-0">
           {movies?.map?.((movie) => (
             <MovieCard key={movie?.id} movie={movie} />
           ))}

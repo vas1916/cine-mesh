@@ -29,7 +29,6 @@ const Login = () => {
       password.current.value
     );
     setErrorMessage(isInValidMessage);
-    //console.log("@@isValid", isInValidMessage);
     if (isInValidMessage) return;
     if (!isSignInForm) {
       // Sign Up
@@ -52,7 +51,6 @@ const Login = () => {
             .catch((error) => {
               setErrorMessage(error.message);
             });
-          console.log("@@Sign Up Successful", user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -68,7 +66,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log("@SignIn Successful", user);
         })
         .catch((error) => {
           const errorCode = error.code;

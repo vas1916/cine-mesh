@@ -14,3 +14,10 @@ export const API_OPTIONS = {
   },
 };
 export const IMG_CDN = "https://image.tmdb.org/t/p/w500";
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en-US", name: "English" },
+  { identifier: "spanish", name: "Spanish" },
+  { identifier: "kannada-IND", name: "Kannada" },
+  { identifier: "telugu-IND", name: "Telugu" },
+  { identifier: "tamil-IND", name: "Tamil" },
+];
