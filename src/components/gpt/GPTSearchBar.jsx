@@ -18,19 +18,19 @@ export const GPTSearchBar = () => {
     console.log(chatGptResults.choices);
   };
   return (
-    <div className=" pt-[10%]">
+    <div className=" pt-[50%] md:pt-[10%]">
       <form
-        className="flex justify-center"
+        className="flex flex-col md:flex-row md:justify-center"
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           ref={searchText}
           type="text"
           placeholder={lang?.[langKey]?.gptSearchPlaceholder}
-          className="border-none rounded-lg w-1/3 p-4 m-4 bg-slate-100 "
+          className="border-none my-3 mx-[5%] rounded-lg md:w-1/3 p-2 md:p-4 md:m-4 bg-slate-100 "
         />
         <button
-          className="px-6 my-4 bg-red-600 beorder-non text-white rounded-lg"
+          className="mx-[35%] md:ml-0 px-2 md:px-6 md:my-4 bg-red-600 text-white rounded-lg"
           onClick={handleGptSearchClick}
         >
           {lang?.[langKey]?.search}

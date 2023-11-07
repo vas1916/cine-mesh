@@ -55,9 +55,8 @@ const Header = () => {
   };
 
   return (
-    <div className="overflow-x-hidden absolute w-full z-10 bg-gradient-to-b from-black flex justify-between">
-      <img className="w-2/12" src={logo} alt="logo" />
-
+    <div className="overflow-x-hidden absolute w-full z-10 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between ">
+      <img className="w-6/12 mx-auto md:w-2/12 md:mx-0" src={logo} alt="logo" />
       {user && (
         <div className="flex">
           {showGpt && (
