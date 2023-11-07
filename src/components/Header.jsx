@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { signInUser, signOutUser } from "../utils/userSlice";
-import { toggleGptSearchView } from "../utils/gptSearchSlice";
-import { changeLanguage } from "../utils/configSlice";
+import { signInUser, signOutUser } from "../utils/reduxSlices/userSlice";
+import { toggleGptSearchView } from "../utils/reduxSlices/gptSearchSlice";
+import { changeLanguage } from "../utils/reduxSlices/configSlice";
 import { SUPPORTED_LANGUAGES } from "../utils/constants";
 
 const Header = () => {
