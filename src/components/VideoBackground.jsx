@@ -5,7 +5,7 @@ const VideoBackground = ({ movieId }) => {
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
   useMovieTrailer({ movieId });
   return (
-    <div className="">
+    <div className="border-r-white-600 border-r-20">
       <iframe
         className="w-screen aspect-video"
         src={
@@ -14,7 +14,7 @@ const VideoBackground = ({ movieId }) => {
           `?&autoplay=1&mute=1`
         }
         title="video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="autoplay; encrypted-media;"
         allowFullScreen
       ></iframe>
     </div>

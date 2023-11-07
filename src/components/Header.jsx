@@ -44,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute w-full z-10 bg-gradient-to-b from-black flex justify-between">
+    <div className="overflow-x-hidden absolute w-full z-10 bg-gradient-to-b from-black flex justify-between">
       <img className="w-2/12" src={logo} alt="logo" />
 
       {user && (
