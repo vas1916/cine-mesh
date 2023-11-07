@@ -61,7 +61,7 @@ const Header = () => {
         <div className="flex">
           {showGpt && (
             <select
-              className="bg-gray-800 text-white rounded-lg px-2 h-8 mt-6"
+              className="bg-gray-800 text-white text-xs ml-4 -mt-12 md:mt-0 md:text-lg rounded-lg px-2 h-8 mt-6"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES?.map((option) => (
@@ -72,17 +72,25 @@ const Header = () => {
             </select>
           )}
           <button
-            className="text-white h-8 mx-4 mt-6 rounded-lg px-2 bg-purple-800 font-bold border-none "
+            className="text-white mx-4 md:mx-4 h-7 md:h-8 -mt-12 md:mt-6 rounded-lg px-2 bg-purple-800 font-bold"
             onClick={handleGptSearch}
           >
-            {!showGpt ? "GPT Search ♾️" : "Home 🏠"}
+            {!showGpt ? (
+              <span className="text-xs md:text-lg">GPT Search ♾️</span>
+            ) : (
+              <span className="text-xs md:text-lg">Home 🏠</span>
+            )}
           </button>
-          <img className="mt-4 w-12 h-12" src={user?.photoURL} alt="logo" />
+          <img
+            className="-mt-12 w-6 h-6 md:mt-4 md:w-12 md:h-12"
+            src={user?.photoURL}
+            alt="logo"
+          />
           <button
-            className="text-white font-bold ml-2 mr-8 border-none"
+            className="text-white font-bold md:ml-2 ml-24  md:mr-8 h-8 -mt-14 md:mt-6 border-none"
             onClick={handleSignOut}
           >
-            (Sign Out)
+            <span className="text-xs md:text-lg">(Sign Out)</span>
           </button>
         </div>
       )}
