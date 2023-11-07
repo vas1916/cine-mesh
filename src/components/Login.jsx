@@ -10,7 +10,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { signInUser } from "../utils/userSlice";
-import { DEFAULT_USER_AVATAR, USER_AVATAR } from "../utils/constants";
+import { DEFAULT_USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
